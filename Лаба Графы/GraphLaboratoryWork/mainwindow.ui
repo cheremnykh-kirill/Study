@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Граф - Алгоритмы - Вариант с вершины 5</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainVerticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="editButtonsLayout">
+      <item>
+       <widget class="QPushButton" name="addVertexButton">
+        <property name="text">
+         <string>Добавить вершину</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeVertexButton">
+        <property name="text">
+         <string>Удалить вершину</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addEdgeButton">
+        <property name="text">
+         <string>Добавить ребро</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeEdgeButton">
+        <property name="text">
+         <string>Удалить ребро</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editWeightButton">
+        <property name="text">
+         <string>Изменить вес</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editMatrixButton">
+        <property name="text">
+         <string>Обновить матрицу</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="algoButtonsLayout">
+      <item>
+       <widget class="QPushButton" name="bfsButton">
+        <property name="styleSheet">
+         <string>background-color: #87CEEB; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Обход в ширину (BFS)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dfsButton">
+        <property name="styleSheet">
+         <string>background-color: #90EE90; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Обход в глубину (DFS)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dijkstraButton">
+        <property name="styleSheet">
+         <string>background-color: #FFB6C1; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Алгоритм Дейкстры</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="floydButton">
+        <property name="styleSheet">
+         <string>background-color: #DDA0DD; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Алгоритм Флойда</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="resetViewButton">
+        <property name="text">
+         <string>Сброс вида</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="contentLayout">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="minimumSize">
+         <size>
+          <width>750</width>
+          <height>500</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="matrixTable">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>350</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::Box</enum>
+      </property>
+      <property name="text">
+       <string>Готов к работе. Нажмите кнопку алгоритма для начала.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
